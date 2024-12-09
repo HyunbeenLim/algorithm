@@ -27,3 +27,42 @@ def solution(bridge_length, weight, truck_weights):
     return answer
 
 ############### 시간 초과 ###############
+
+
+# gpt 수정 코드
+from collections import deque
+
+def solution(bridge_length, weight, truck_weights):
+    answer = 0
+    bridge_q = deque([0] * bridge_length)  # 다리를 나타내는 큐
+    cur_weight = 0  # 현재 다리 위의 트럭 무게 합
+    
+    truck_weights = deque(truck_weights)  # 트럭 대기열을 deque로 변환
+
+    while truck_weights or cur_weight > 0:
+        answer += 1
+
+        # 1. 다리에서 트럭이 나감
+        exited_truck = bridge_q.popleft()
+        cur_weight -= exited_truck
+
+        # 2. 새 트럭이 다리에 진입할 수 있는지 확인
+        if truck_weights and cur_weight + truck_weights[0] <= weight:
+            new_truck = truck_weights.popleft()
+            bridge_q.append(new_truck)
+            cur_weight += new_truck
+        else:
+            bridge_q.append(0)  # 트럭이 못 들어오면 빈 공간 추가
+
+    return answer
+
+print(solution(2, 10, [7,4,6,5]))
+print(solution(100, 100, [10]))
+print(solution(100, 100, [10,10,10,10,10,10,10,10,10,10]))
+
+
+### 수정 아이디어
+'''
+bridge_q를 다리 길이 만큼 0을 넣음
+트럭이 나올 차례가 아닐 땐 트럭을 pop 하는 게 아닌, 0을 pop 하고 다시 0을 append 하는 로직
+'''
