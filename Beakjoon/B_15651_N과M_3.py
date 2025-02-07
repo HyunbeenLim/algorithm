@@ -1,12 +1,12 @@
-# 길이가 N인 리스트에서 M개를 고른 수열 출력
+# N개 중 M개를 고른 수열
 # 중복 가능
-# 비내림차순
+# 같은 수열은 출력 X
 
 import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-arr = sorted(list(map(int, input().split())))
+arr = list(range(1, N + 1))
 seq = [0] * M
 
 def perm(k):
@@ -14,10 +14,7 @@ def perm(k):
         print(*seq)
     else:
         for i in range(N):
-            if k > 0 and seq[k-1] > arr[i]:
-                continue
             seq[k] = arr[i]
             perm(k + 1)
 
 perm(0)
-

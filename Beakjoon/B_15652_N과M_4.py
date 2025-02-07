@@ -1,12 +1,11 @@
-# 길이가 N인 리스트에서 M개를 고른 수열 출력
 # 중복 가능
-# 비내림차순
+# 비내림차순 -> a1 <= a2
 
 import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-arr = sorted(list(map(int, input().split())))
+arr = list(range(1, N + 1))
 seq = [0] * M
 
 def perm(k):
@@ -20,4 +19,3 @@ def perm(k):
             perm(k + 1)
 
 perm(0)
-
