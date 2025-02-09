@@ -17,10 +17,13 @@
 # for comb in combi:
 #     print(comb)
 
-w = [3,1,4,5]
-print(w)
+# w = [3,1,4,5]
+# print(w)
 
-w = list(map(str, w))
-print(w)
+# w = list(map(str, w))
+# print(w)
 
-print(max(enumerate(w), key=lambda x: x[1][0]))
+# print(max(enumerate(w), key=lambda x: x[1][0]))
+
+a = -5
+print(-int(-a/2))
