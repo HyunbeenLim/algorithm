@@ -25,5 +25,4 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-a = -5
-print(-int(-a/2))
+print(2**6)
