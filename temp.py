@@ -25,4 +25,10 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-print(2**6)
+def factorial(number):
+    value = 1
+    for i in range(1, number + 1):
+        value *= i
+    return value
+
+print(factorial(3))
