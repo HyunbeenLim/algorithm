@@ -25,16 +25,7 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-pascal = []
+w = [1,2,3]
+e = [1,2,3]
 
-for i in range(7):
-    pascal.append([1]*(i+1))
-
-for i in range(7):
-    for j in range(1, i):
-        pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j]
-
-for i in range(len(pascal)):
-    print(i)
-    print(pascal[i][1:(i+1)])
-    print(sum(pascal[i][1:(i+1)]))
+print(w+e)
