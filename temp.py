@@ -25,7 +25,5 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-w = [1,2,3]
-e = [1,2,3]
-
-print(w+e)
+for i in range(0):
+    print(i)
