@@ -25,5 +25,5 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-for i in range(0):
-    print(i)
+for c in range(-5,5):
+    print(f'c={c} 나머지={c%3}')
