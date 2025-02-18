@@ -8,7 +8,7 @@ def solution(n, times):
     while start < end:
         middle = (start + end) // 2
 
-        # 중간 값에서 모든든 입국 심사대가 처리할 수 있는 사람 수
+        # 중간 값에서 모든 입국 심사대가 처리할 수 있는 사람 수
         done = sum(middle // time for time in times)
         
         if done >= n:
@@ -24,5 +24,3 @@ def solution(n, times):
             min_time = t
         else:
             return min_time
-
-print(solution(6, [7, 10]))
