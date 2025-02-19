@@ -25,4 +25,13 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-print(17//4)
+
+
+def temp(random:set):
+    print(random)
+    for i in range(10):
+        random.add(i)
+    print(len(random))
+    return random
+
+print(temp(set()))
