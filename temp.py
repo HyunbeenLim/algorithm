@@ -27,11 +27,5 @@
 
 
 
-def temp(random:set):
-    print(random)
-    for i in range(10):
-        random.add(i)
-    print(len(random))
-    return random
-
-print(temp(set()))
+w = [[1,2],[3,4]]
+print(max(map(max, w)))
