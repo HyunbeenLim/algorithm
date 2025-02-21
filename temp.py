@@ -27,5 +27,7 @@
 
 
 
-w = [[1,2],[3,4]]
-print(max(map(max, w)))
+w = input()
+print(w)
+w = sorted(w)
+print(w)
