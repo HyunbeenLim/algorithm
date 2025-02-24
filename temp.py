@@ -26,8 +26,6 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-
-w = input()
-print(w)
-w = sorted(w)
-print(w)
+N = 2
+for i in range(4, N):
+    print(i)
