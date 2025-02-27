@@ -25,7 +25,4 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-
-N = 2
-for i in range(4, N):
-    print(i)
+print(10 == 1e1)
