@@ -25,4 +25,4 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-print(10 == 1e1)
+
