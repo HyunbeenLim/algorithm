@@ -26,3 +26,8 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
+def ww():
+    return (1, 2)
+
+a, b = ww()
+print(a, b)
