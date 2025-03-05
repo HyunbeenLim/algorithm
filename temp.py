@@ -26,8 +26,7 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-def ww():
-    return (1, 2)
+w = [(1,2), (3,4)]
 
-a, b = ww()
-print(a, b)
+for r, c in w:
+    print(r, c)
