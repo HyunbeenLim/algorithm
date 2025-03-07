@@ -28,5 +28,7 @@
 
 w = [(1,2), (3,4)]
 
-for r, c in w:
-    print(r, c)
+if (1, 2) not in w:
+    print(True)
+else:
+    print(False)
