@@ -26,9 +26,6 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-w = [(1,2), (3,4)]
-
-if (1, 2) not in w:
-    print(True)
-else:
-    print(False)
+w = [1,2,3,4]
+w+=[5]
+print(w)

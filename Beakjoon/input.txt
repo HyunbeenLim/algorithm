@@ -1,12 +1,5 @@
-......
-......
-......
-......
-......
-....Y.
-....Y.
-....Y.
-....RR
-...YRR
-..GGYY
-..GGYY
+YYYYY
+SYSYS
+YYYYY
+YSYYS
+YYYYY
