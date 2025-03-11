@@ -25,7 +25,7 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
+w = [(1,2),(3,4)]
 
-w = [1,2,3,4]
-w+=[5]
+w.pop(w.index((3,4)))
 print(w)
