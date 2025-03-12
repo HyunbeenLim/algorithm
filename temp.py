@@ -25,10 +25,5 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-w = [1,2,3,4]
-copy = []
-for c in w:
-    copy.append(c)
-copy[3] -=1
-print(w)
-print(copy)
+w = [0,1,2,3,4,5,6,7,8,9,10]
+print(w[0:11])
