@@ -25,5 +25,6 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-w = [0,1,2,3,4,5,6,7,8,9,10]
-print(w[0:11])
+w = float('inf')
+if w:
+    print(True)
