@@ -25,13 +25,5 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-import heapq
-
-arr = []
-
-to_push = [3,-2,4,-5,1,-5]
-
-for x in to_push:
-    heapq.heappush(arr, (abs(x), x))
-
-print(arr)
+w = [[]] * 3
+print(w)
