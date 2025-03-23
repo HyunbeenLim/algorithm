@@ -25,5 +25,5 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-w = [[]] * 3
-print(w)
+
+print(5//2)
