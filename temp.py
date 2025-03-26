@@ -25,5 +25,6 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
+from collections import deque
 
-print(5//2)
+print(not False)
