@@ -25,4 +25,6 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-print(16//2)
+w = []
+for frac in w:
+    print(frac)
