@@ -25,6 +25,10 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-w = []
-for frac in w:
-    print(frac)
+w = {
+    'a':1,
+    'b':2
+}
+
+for key in w.keys():
+    print(w[key])
