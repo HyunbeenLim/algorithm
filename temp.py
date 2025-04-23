@@ -25,5 +25,11 @@
 
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
-print(ord('A'))
-print(ord('Z'))
+
+N = 5
+
+q = 0
+w = 4
+
+print((q-1)%N, (q+1)%N) # 4, 1
+print((w-1)%N, (w+1)%N) # 3, 0
