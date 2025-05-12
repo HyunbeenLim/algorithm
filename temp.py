@@ -26,10 +26,15 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-N = 5
+from collections import deque
 
-q = 0
-w = 4
+w = [(1,2),(3,4)]
 
-print((q-1)%N, (q+1)%N) # 4, 1
-print((w-1)%N, (w+1)%N) # 3, 0
+qq = deque(w)
+
+while qq:
+    r, c = qq.popleft()
+    print(r, c)
+print('--')
+for r, c in w:
+    print(r, c)
