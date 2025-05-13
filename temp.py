@@ -26,15 +26,10 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-from collections import deque
 
-w = [(1,2),(3,4)]
-
-qq = deque(w)
-
-while qq:
-    r, c = qq.popleft()
-    print(r, c)
-print('--')
-for r, c in w:
-    print(r, c)
+print('         ,r\'"7')
+print('r`-_   ,\'  ,/')
+print(' \. ". L_r\'')
+print('   `~\/')
+print('      |')
+print('      |')
