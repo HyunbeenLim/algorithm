@@ -26,10 +26,6 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-
-print('         ,r\'"7')
-print('r`-_   ,\'  ,/')
-print(' \. ". L_r\'')
-print('   `~\/')
-print('      |')
-print('      |')
+w = [(3,2),(3,1),(1,2)]
+w.sort()
+print(w)
