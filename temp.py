@@ -26,6 +26,8 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-w = [(3,2),(3,1),(1,2)]
-w.sort()
-print(w)
+w = [[[0] * 3 for _ in range(3)] for _ in range(4)]
+
+w[0][0] = [1,1,1]
+for frac in w:
+    print(frac)
