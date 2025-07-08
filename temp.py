@@ -26,8 +26,9 @@
 # print(max(enumerate(w), key=lambda x: x[1][0]))
 
 
-w = [[[0] * 3 for _ in range(3)] for _ in range(4)]
+w = [[[3, 1] for _ in range(3)] for _ in range(3)]
 
-w[0][0] = [1,1,1]
+w[0][0][1] = 3
+
 for frac in w:
     print(frac)
